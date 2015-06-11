@@ -10,7 +10,7 @@ class varnish::params {
   
   case $::osfamily {
     'RedHat', 'Amazon': {
-      $vcl_reload   = '/usr/bin/varnish_reload_vcl'
+      $vcl_reload   = '/usr/sbin/varnish_reload_vcl'
 
       case $::operatingsystemmajrelease {
         '6': {
